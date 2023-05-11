@@ -1,0 +1,35 @@
+@import url('../vendor/normalize.css');
+@import url('../vendor/fonts.css');
+
+@import url('../bloks/page/page.css');
+
+/* header */
+@import url('../bloks/header/header.css');
+@import url('../bloks/header/__photo/profile__photo.css');
+@import url('../bloks/header/__link-conteiner/profile__link-conteiner.css');
+@import url('../bloks/header/__text/profile__text.css');
+@import url('../bloks/header/__info/profile__info.css');
+@import url('../bloks/header/__links/profile__links.css');
+@import url('../bloks/header/__link-titel/profile__link-titel.css');
+
+
+/* content, foto-grid */
+@import url('../bloks/content/content.css');
+@import url('../bloks/content/__titel/content__titel.css');
+@import url('../bloks/content/__photo-image/content__photo-image.css');
+@import url('../bloks/content/__photos/content__photos.css');
+@import url('../bloks/content/__photo-text/content__photo-text.css');
+
+/* footer */
+@import url('../bloks/footer/footer.css');
+@import url('../bloks/footer/__author/footer__author.css');
+@import url('../bloks/footer/__link/footer__link.css');
+@import url('../bloks/footer/__linl-text/footer__linl-text.css');
+@import url('../');
+@import url('../');
+@import url('../');
+@import url('../');
+@import url('../');
+@import url('../');
+@import url('../');
+

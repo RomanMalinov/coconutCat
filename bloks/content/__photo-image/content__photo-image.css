@@ -1,0 +1,22 @@
+.content__photo-image {
+  max-width: 350px;
+  margin: 10px 0;
+}
+
+@media screen and (min-width: 880px) and (max-width: 1085px) {
+  .content__photo-image {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content__photo-image {
+    max-width: 300px;
+    margin-bottom: 0;
+  }
+}
+
+.content__photo-image:hover {
+  transform: scale(105%);
+  cursor: pointer;
+}

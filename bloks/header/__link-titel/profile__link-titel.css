@@ -1,0 +1,19 @@
+.profile__link-titel {
+  color: rgb(34, 171, 239);
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .profile__link-titel {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profile__link-titel {
+    font-size: 18px;
+  }
+}
+
+

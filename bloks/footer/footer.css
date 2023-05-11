@@ -1,0 +1,12 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto 5px auto;
+  max-width: calc(100% - 10px);
+}
+
+@media screen and (min-width: 880px) and (max-width: 1085px) {
+  .footer {
+    margin-bottom: 10px;
+  }
+}

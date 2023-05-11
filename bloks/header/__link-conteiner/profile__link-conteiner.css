@@ -1,0 +1,11 @@
+.profile__link-conteiner {
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 1024px) {
+  .profile__link-conteiner {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,9 @@
+/* шрифты: */
+@font-face {
+  font-family: 'Fira Sans Extra Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./fonts/FiraSansExtraCondensed-Regular.woff2') format('woff2'),
+       url('./fonts/FiraSansExtraCondensed-Regular.woff') format('woff');
+}

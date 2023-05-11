@@ -1,0 +1,16 @@
+.content__titel {
+  text-align: center;
+  margin-bottom: 10px;
+  color: rgb(103, 186, 218);
+  margin-top: 0;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 768px) {
+  .content__titel {
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 500;
+  }
+}
