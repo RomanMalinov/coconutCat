@@ -10,6 +10,7 @@
   <title>Мейн-кун кот Кокос</title>
   <link rel="icon" href="images/black_cat_icon_177458.ico">
   <link rel="stylesheet" href="pages/index.css">
+  <script src="./script/script.js" defer></script>
 </head>
 
 <body class="page pagemain">
@@ -38,9 +39,11 @@
   <main class="content">
     <h2 class="content__titel">Моя насыщенная жизнь в фотографиях:</h2>
     <section class="content__photos">
-      <article class="photo">
+      <!--<article class="photo">
         <img class="content__photo-image" src="images/первы_день.jpg" alt="Котенок на лежанке">
         <h2 class="content__photo-text ">Первый день дома</h2>
+             <button class="photo__like-button" type="button"></button>
+      <button class="photo__delete-button"></button>
       </article>
       <article class="photo ">
         <img class="content__photo-image" src="images/котмесяц.jpg" alt="Котенок среди домашних растений">
@@ -101,18 +104,36 @@
       <article class="photo">
         <img class="content__photo-image" src="images/кот_и_8_марта.jpg" alt="Кот с цветами и шариком">
         <h2 class="content__photo-text">С 8 марта милых дам!</h2>
-      </article>
+      </article> -->
     </section>
   </main>
 
   <footer class="footer">
     <p class="footer__author ">&COPY; 2022 Malinov Roman</p>
     <a class="footer__link" href="https://t.me/romanmalinov" target="blank"> <img
-    src="images/icons8-телеграмма-app(1).svg" alt="логотип telegram">
+        src="images/icons8-телеграмма-app(1).svg" alt="логотип telegram">
       <p class="footer__linl-text">Для связи</p>
     </a>
   </footer>
-  <script src="./script/script.js"></script>
+  <!-- zoom cardModal window -->
+  <div class="popup popup_type_zoom-card">
+    <div class="popup__container-zoom-card">
+      <button class="popup__button-close popup__close" type="button"></button>
+      <img class="popup__container-img" src="./images/котмесяц.jpg" alt="увеличенное фото">
+      <p class="popup__container-text">Название</p>
+    </div>
+    <!-- template -->
+    <template class="teplate__card">
+      <article class="photo">
+        <img class="content__photo-image" src="" alt="Кот с цветами и шариком">
+        <div class="photo__img-block">
+          <h2 class="content__photo-text">С 8 марта милых дам!</h2>
+          <button class="photo__like-button" type="button"></button>
+        </div>
+        <button class="photo__delete-button"></button>
+      </div>
+      </article>
+    </template>
 </body>
 
 </html>

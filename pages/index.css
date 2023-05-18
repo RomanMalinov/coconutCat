@@ -19,17 +19,25 @@
 @import url('../bloks/content/__photo-image/content__photo-image.css');
 @import url('../bloks/content/__photos/content__photos.css');
 @import url('../bloks/content/__photo-text/content__photo-text.css');
+@import url('../bloks/content/__like-button/photo__like-button.css');
+@import url('../bloks/content/__delete-button/photo__delete-button.css');
+@import url('../bloks/content/__like-button/_activ/photo__like-button_activ.css');
+@import url('../bloks/content/__img-block/photo__img-block.css');
+
+@import url('../bloks/photo/photo.css');
+
 
 /* footer */
 @import url('../bloks/footer/footer.css');
 @import url('../bloks/footer/__author/footer__author.css');
 @import url('../bloks/footer/__link/footer__link.css');
 @import url('../bloks/footer/__linl-text/footer__linl-text.css');
-@import url('../');
-@import url('../');
-@import url('../');
-@import url('../');
-@import url('../');
-@import url('../');
-@import url('../');
+
+@import url('../bloks/popup/popup.css');
+@import url('../bloks/popup/__button-close/popup__button-close.css');
+@import url('../bloks/popup/__container-zoom-card/popup__container-zoom-card.css');
+@import url('../bloks/popup/_opened/popup_opened.css');
+@import url('../bloks/popup/popup__conteiner-img/popup__conteiner-img.css');
+@import url('../bloks/popup/__container-text/popup__container-text.css');
+
 

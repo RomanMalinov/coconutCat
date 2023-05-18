@@ -1,14 +1,16 @@
 .content__photo-text {
-  color: rgb(103, 186, 218);
-  font-size: 25px;
+  margin: 0 0 0 10px;
+  color: rgb(3, 24, 32);
+  font-size: 20px;
   max-width: 350px;
-  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 880px) and (max-width: 1085px) {
   .content__photo-text {
     max-width: 400px;
-    font-size: 20px;
   }
 }
 
