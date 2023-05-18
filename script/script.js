@@ -31,7 +31,6 @@ const arrayImages = [
     name: '5 месяцев',
     link: './images/коту_3_месяца.jpg',
   },
-
   {
     name: 'Новый год',
     link: './images/photo_2022-04-03_22-48-28.jpg',
@@ -94,6 +93,7 @@ const arrayImages = [
     link: './images/element__img-cat-6.jpg',
   },
 ];
+
 
 
 //  функции
