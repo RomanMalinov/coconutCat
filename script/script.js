@@ -1,4 +1,4 @@
-console.log('test');
+
 // переменные
 const conteinerElements = document.querySelector('.content__photos');
 const templateElement = document.querySelector('.teplate__card');
@@ -8,8 +8,10 @@ const popupCardsImage = popupCards.querySelector('.popup__container-img');
 const popupCardsText = popupCards.querySelector('.popup__container-text');
 // Все кнопки закрытия модальных окон
 const closeButtons = document.querySelectorAll('.popup__close');
+// Выбор фотографи header
+const coverHeaderImg = document.querySelector('.profile__photo');
 
-// массив
+// массивы
 const arrayImages = [
   {
     name: 'Первый день дома',
@@ -94,7 +96,11 @@ const arrayImages = [
   },
 ];
 
-
+const arrayCatsImages = [
+  './images/cat_1.jpg',
+  './images/cat_2.jpg',
+  './images/cat_3.jpg',
+];
 
 //  функции
 //  функция рендеринга карточек
@@ -119,11 +125,11 @@ function addCard(item) {
     targetItem.remove();
   }
  // функция лайка карточки
- const likeButtonElement = newItem.querySelector('.photo__like-button');
- likeButtonElement.addEventListener('click', toggleLikeElement);
- function toggleLikeElement(evt) {
-  evt.target.classList.toggle('photo__like-button_activ');
- }
+//  const likeButtonElement = newItem.querySelector('.photo__like-button');
+//  likeButtonElement.addEventListener('click', toggleLikeElement);
+//  function toggleLikeElement(evt) {
+//   evt.target.classList.toggle('photo__like-button_activ');
+//  }
  // фунция открытия попапа при клике на фотографию
  function handleClicckImage() {
    popupCardsImage.src = item.link;
@@ -150,3 +156,19 @@ closeButtons.forEach((button) => {
   // устанавливаем обработчик закрытия на крестик
   button.addEventListener('click', () => closePopup(popup));
 });
+//функция пандомного обновления фотографии при наведении мышки на фотографию в header
+function getRandomElement(arr) {
+  const randomId = Math.floor(Math.random() * arr.length);
+  return arr[randomId];
+}
+coverHeaderImg.addEventListener('mouseover', function() {
+  coverHeaderImg.src = getRandomElement(arrayCatsImages);
+});
+
+ // функция рефакторинга  лайка карточки с помощью делегирования
+ conteinerElements.addEventListener('click', toggleLikeElement);
+ function toggleLikeElement(evt) {
+  if (evt.target.classList.contains('photo__like-button')) {
+    evt.target.classList.toggle('photo__like-button_activ')
+  }
+ }
